@@ -1,0 +1,24 @@
+{
+  "name": "blog-app",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd Backend/server && npm run dev",
+    "client": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "cd Backend/server && npm start"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.30.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.3",
+    "concurrently": "^8.2.2",
+    "vite": "^4.4.5"
+  }
+}
